@@ -1,0 +1,154 @@
+/*Geral*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300&display=swap');
+html {
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel {
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: 1px solid rgb(209, 208, 208);
+}
+
+
+/*Areas dos pontos*/
+
+.scores {
+    display: flex;
+}
+
+.score {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score h1 {
+    font-size: 1.8rem;
+}
+
+.life-bar {
+    width: 80%;
+    height: 20px;
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    ;
+}
+
+.life-bar .life {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: rgb(4, 172, 4);
+}
+
+.life-bar .life.danger {
+    background-color: rgb(167, 7, 7);
+}
+
+.cem {
+    margin-top: 10px;
+}
+
+
+/*Area de Resultado */
+
+.result {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#win {
+    color: rgb(4, 172, 4);
+}
+
+#lose {
+    color: rgb(167, 7, 7);
+}
+
+
+/*Area de Botoes*/
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    margin: 0px 10px;
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.new-game {
+    font-size: 1.1rem;
+    background-color: rgb(104, 154, 248);
+    width: 400px;
+}
+
+.attack {
+    background-color: rgb(167, 7, 7);
+}
+
+.especial-attack {
+    background-color: rgb(248, 151, 4);
+}
+
+.heal {
+    background-color: rgb(4, 172, 4);
+}
+
+.give-up {
+    background-color: rgb(95, 94, 94);
+}
+
+
+/*Area de Logs*/
+
+.logs ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logs ul li {
+    display: flex;
+    justify-content: center;
+    margin: 4px 0px;
+    padding: 3px 0px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    width: 600px;
+}
+
+.player {
+    background-color: rgb(173, 241, 173);
+}
+
+.monster {
+    background-color: rgb(241, 147, 147);
+}
